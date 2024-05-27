@@ -14,7 +14,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.asianliftbd.staff.activity.EditProfile;
 import com.asianliftbd.staff.user.UInfo;
 import com.asianliftbd.staff.user.UDevice;
 import com.asianliftbd.staff.user.UProfile;
@@ -72,7 +71,7 @@ public class DashboardMenu extends Fragment {
         });
         TextView editProfile=root.findViewById(R.id.edit_profile);
         TextView change=root.findViewById(R.id.change_password);
-        editProfile.setOnClickListener(new View.OnClickListener(){@Override public void onClick(View v){if(SystemClock.elapsedRealtime()-C<1000){return;}C=SystemClock.elapsedRealtime();startActivity(new Intent(getActivity(), EditProfile.class));}});
+        editProfile.setOnClickListener(new View.OnClickListener(){@Override public void onClick(View v){if(SystemClock.elapsedRealtime()-C<1000){return;}C=SystemClock.elapsedRealtime();startActivity(new Intent(getActivity(),EditProfile.class));}});
         change.setOnClickListener(new View.OnClickListener(){@Override public void onClick(View v){if(SystemClock.elapsedRealtime()-C<1000){return;}C=SystemClock.elapsedRealtime();startActivity(new Intent(getActivity(),ChangePassword.class));}});
         web.setOnClickListener(new View.OnClickListener(){@Override public void onClick(View v){if(SystemClock.elapsedRealtime()-C<1000){return;}C=SystemClock.elapsedRealtime();String url="https://asianliftbd.com";Intent i=new Intent(Intent.ACTION_VIEW);i.setData(Uri.parse(url));startActivity(i); }});
         fb.setOnClickListener(new View.OnClickListener(){@Override public void onClick(View v){if(SystemClock.elapsedRealtime()-C<1000){return;}C=SystemClock.elapsedRealtime();String url="https://www.facebook.com/asianliftbangladesh";

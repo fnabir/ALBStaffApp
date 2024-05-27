@@ -1,4 +1,4 @@
-package com.asianliftbd.staff.activity;
+package com.asianliftbd.staff;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,7 +8,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.asianliftbd.staff.R;
 import com.asianliftbd.staff.user.UContact;
 import com.asianliftbd.staff.user.UInfo;
 import com.asianliftbd.staff.user.UProfile;
@@ -22,6 +21,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.Objects;
 
 public class EditProfile extends AppCompatActivity {
     private TextInputEditText name,phone;

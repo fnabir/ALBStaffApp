@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="site">
+        <item>বাছাই করুন</item>
+        <item>Asian Lift</item>
+        <item>New Project</item>
+        <item>Al-Safa B&amp;H</item>
+        <item>Anabella BPL</item>
+        <item>"Banker's Heritage"</item>
+        <item>Bashundhara Tower</item>
+        <item>Bhuiya Mohal</item>
+        <item>Binimoy Tower</item>
+        <item>Brother Tower</item>
+        <item>CDDL</item>
+        <item>Corvo Cycles Ltd</item>
+        <item>Grace Park</item>
+        <item>Green Tower</item>
+        <item>Hoque Tower</item>
+        <item>IBBL Abul Biri</item>
+        <item>IHPL</item>
+        <item>Mati Mohal</item>
+        <item>Medinova Hospital</item>
+        <item>Mir Cottage</item>
+        <item>Moytri Bhavan</item>
+        <item>NS Builders</item>
+        <item>Nowab Tower</item>
+        <item>Pahartoli Tower</item>
+        <item>Proyash</item>
+        <item>RR Tower</item>
+        <item>SKAN Chayanir</item>
+        <item>Sagorika Tower</item>
+        <item>"Seamen's Dream"</item>
+        <item>Shamoli Tower</item>
+        <item>Shopno Nibas</item>
+        <item>Southern University</item>
+        <item>Surovi Tower</item>
+        <item>Trident Cycles Ltd</item>
+        <item>Unity Tower</item>
+        <item>Whitex Garments Ltd</item>
+    </string-array>
+    <string-array name="conveyance">
+        <item>বাছাই করুন</item>
+        <item>যাতায়াত</item>
+        <item>খাবার</item>
+        <item>অন্যান্য</item>
+    </string-array>
+    <string-array name="transportation">
+        <item>বাছাই করুন</item>
+        <item>লোকাল বাস</item>
+        <item>রিকশা</item>
+        <item>সি.এন.জি</item>
+    </string-array>
+    <string-array name="lift">
+        <item>বাছাই করুন</item>
+        <item>Passenger Lift</item>
+        <item>Cargo Lift</item>
+        <item>Hospital Lift</item>
+        <item>Capsule Lift</item>
+        <item>Escalator</item>
+        <item>Dumbwaiter</item>
+        <item>Generator</item>
+        <item>অন্যান্য</item>
+    </string-array>
+    <string-array name="wtype">
+        <item>বাছাই করুন</item>
+        <item>নতুন প্রজেক্ট</item>
+        <item>সার্ভিসিং</item>
+        <item>লিফট ইন্সটল</item>
+        <item>রিপেয়ার</item>
+    </string-array>
+</resources>

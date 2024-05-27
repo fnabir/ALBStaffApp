@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#2699fb</color>
+    <color name="blueD">#0f5ba1</color>
+    <color name="blueM">#1583e9</color>
+    <color name="bg">#daecfc</color>
+    <color name="alb_bg">#5B9BD2</color>
+    <color name="gray">#333</color>
+    <color name="tp">#00000000</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="red">#a71d21</color>
+</resources>

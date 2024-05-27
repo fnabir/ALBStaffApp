@@ -1,0 +1,1 @@
+package com.asianliftbd.staff.user;import com.google.firebase.database.IgnoreExtraProperties;@IgnoreExtraProperties public class UValue { private String value;public UValue(){}public UValue(String value){this.value = value;}public String getValue(){return value;}public void setValue(String value) {this.value = value;}}

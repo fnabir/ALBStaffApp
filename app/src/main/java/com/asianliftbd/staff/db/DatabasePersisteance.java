@@ -1,1 +1,0 @@
-package com.asianliftbd.staff.db;import com.google.firebase.database.FirebaseDatabase;public class DatabasePersisteance extends android.app.Application{@Override public void onCreate(){super.onCreate();FirebaseDatabase.getInstance().setPersistenceEnabled(true); }}

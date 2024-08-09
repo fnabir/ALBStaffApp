@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.AboutApp"
+    android:id="@+id/main">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        style="@style/toolbarLayout">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbarLayout"
+            style="@style/collapsingToolbarLayout"
+            app:toolbarId="@+id/toolbar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/toolbar"
+                app:title="@string/about_app"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_back"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            style="@style/linearLayout.vertical.center"
+            android:paddingTop="20dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                style="@style/linearLayout.vertical.center"
+                android:background="@drawable/bg_rounded_transparent"
+                android:backgroundTint="@color/md_theme_onPrimary"
+                android:padding="10dp">
+                <ImageView
+                    android:id="@+id/logo_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:src="@drawable/logo_alb_outline"
+                    android:transitionName="logo"/>
+                <TextView
+                    style="@style/label"
+                    android:text="Developer"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/company_name"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleMedium"/>
+                <TextView
+                    style="@style/label"
+                    android:text="Version"
+                    android:layout_marginTop="10dp"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleMedium"/>
+                <TextView
+                    style="@style/label"
+                    android:text="Release Date"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/releaseDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleMedium"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/updateLayout"
+                style="@style/linearLayout.vertical.center"
+                android:background="@drawable/bg_rounded_transparent"
+                android:backgroundTint="@color/md_theme_onPrimary"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/updateResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleLarge"/>
+                <TextView
+                    style="@style/label"
+                    android:text="Version"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:id="@+id/updateVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleMedium"/>
+                <TextView
+                    style="@style/label"
+                    android:text="Release Date"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:id="@+id/updateReleaseDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleMedium"/>
+                <Button
+                    android:id="@+id/downloadButton"
+                    style="@style/button.elevated.submit"
+                    android:text="@string/download"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/whatsNewLayout"
+                style="@style/linearLayout.vertical"
+                android:background="@drawable/bg_rounded_transparent"
+                android:backgroundTint="@color/md_theme_onPrimary"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/label"
+                    android:text="What's New"
+                    android:layout_gravity="center_horizontal"/>
+
+                <LinearLayout
+                    android:id="@+id/fixedLayout"
+                    style="@style/linearLayout.vertical"
+                    android:layout_marginTop="8dp">
+                    <TextView
+                        style="@style/label"
+                        android:text="Fixed"/>
+                    <TextView
+                        android:id="@+id/fixed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/updatedLayout"
+                    style="@style/linearLayout.vertical"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        style="@style/label"
+                        android:text="Updated"/>
+                    <TextView
+                        android:id="@+id/updated"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/addedLayout"
+                    style="@style/linearLayout.vertical"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        style="@style/label"
+                        android:text="Added"/>
+                    <TextView
+                        android:id="@+id/added"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="site">
-        <item>বাছাই করুন</item>
-        <item>Asian Lift</item>
-        <item>New Project</item>
+    <string-array name="projectName">
         <item>Al-Safa B&amp;H</item>
         <item>Anabella BPL</item>
         <item>"Banker's Heritage"</item>
@@ -12,6 +9,7 @@
         <item>Binimoy Tower</item>
         <item>Brother Tower</item>
         <item>CDDL</item>
+        <item>Chowdhury Tower</item>
         <item>Corvo Cycles Ltd</item>
         <item>Grace Park</item>
         <item>Green Tower</item>
@@ -38,20 +36,7 @@
         <item>Unity Tower</item>
         <item>Whitex Garments Ltd</item>
     </string-array>
-    <string-array name="conveyance">
-        <item>বাছাই করুন</item>
-        <item>যাতায়াত</item>
-        <item>খাবার</item>
-        <item>অন্যান্য</item>
-    </string-array>
-    <string-array name="transportation">
-        <item>বাছাই করুন</item>
-        <item>লোকাল বাস</item>
-        <item>রিকশা</item>
-        <item>সি.এন.জি</item>
-    </string-array>
-    <string-array name="lift">
-        <item>বাছাই করুন</item>
+    <string-array name="liftType">
         <item>Passenger Lift</item>
         <item>Cargo Lift</item>
         <item>Hospital Lift</item>
@@ -59,13 +44,56 @@
         <item>Escalator</item>
         <item>Dumbwaiter</item>
         <item>Generator</item>
-        <item>অন্যান্য</item>
+        <item>Other</item>
     </string-array>
-    <string-array name="wtype">
-        <item>বাছাই করুন</item>
-        <item>নতুন প্রজেক্ট</item>
-        <item>সার্ভিসিং</item>
-        <item>লিফট ইন্সটল</item>
-        <item>রিপেয়ার</item>
+    <string-array name="workType">
+        <item>Full Project</item>
+        <item>Servicing</item>
+        <item>Installation</item>
+        <item>Repair</item>
+    </string-array>
+    <string-array name="projectPaymentType">
+        <item>Cash</item>
+        <item>Cheque</item>
+        <item>Account Transfer</item>
+        <item>Bank Transfer</item>
+        <item>CellFin</item>
+        <item>bKash</item>
+    </string-array>
+    <string-array name="spay">
+        <item>Cash</item>
+        <item>bKash</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="projectExpenseType">
+        <item>Servicing</item>
+        <item>Callback</item>
+        <item>Spare Parts</item>
+        <item>Repairing</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="staffTransactionType">
+        <item>Advance</item>
+        <item>For Conveyance</item>
+        <item>House Rent</item>
+        <item>Payment</item>
+        <item>Salary</item>
+        <item>Bonus</item>
+        <item>Cashback</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
     </string-array>
 </resources>

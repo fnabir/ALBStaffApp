@@ -1,85 +1,117 @@
 <resources>
-    <string name="appname">Asian Lift</string>
-    <string name="fullapp_name">Asian Lift Bangladesh</string>
+    <string name="app_name">ALB Staff</string>
+    <string name="company_name">Asian Lift Bangladesh</string>
+
+    <!-- Button -->
+    <string name="submit">Submit</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="download">Download</string>
+    <string name="search">Search</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Input Placeholder -->
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="details">Details</string>
+    <string name="amount">Amount</string>
+    <string name="total">Total</string>
+    <string name="date">Date</string>
+    <string name="empty">No Record Found</string>
+    <string name="conveyance">Conveyance</string>
+    <string name="project">Project</string>
+
+    <!-- Start -->
     <string name="login_with_email">Login with Email</string>
-    <string name="tou">Terms of Use</string>
     <string name="copyright">Copyright reserved by</string>
-    <string name="morning">Good Morning</string>
-    <string name="evening">Good Evening</string>
-    <string name="afternoon">Good Afternoon</string>
+    <string name="terms_of_use">Terms of Use</string>
+
+    <!-- Login -->
     <string name="welcome">Welcome</string>
-    <string name="email">Email</string>
-    <string name="pwd">Password</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password</string>
     <string name="login">Login</string>
-    <string name="forget_pwdq">Forget Password?</string>
-    <string name="forget_pwd">Forget Password</string>
-    <string name="agree">By logging in, you agree to our</string>
-    <string name="up_to_date">You are using latest version.</string>
-    <string name="new_update_available">New update available</string>
-    <string name="released_on">Released on:</string>
-    <string name="check">Check for Update</string>
-    <string name="work">Work</string>
-    <string name="conveyance">কনভেন্স</string>
+    <string name="agree_terms">By logging in, you agree to our</string>
+
+    <!-- Password Forget -->
+    <string name="ins_reset_pass">Please enter your email address and submit to get link to reset your password.</string>
+
+    <!-- Dashboard -->
+    <string name="home">Home</string>
     <string name="menu">Menu</string>
+
+    <!-- Dashboard Home -->
+    <string name="good_morning">Good Morning</string>
+    <string name="good_afternoon">Good Afternoon</string>
+    <string name="good_evening">Good Evening</string>
+    <string name="good_night">Good Night</string>
+    <string name="new_app_update">New App Update</string>
     <string name="current_balance">Current Balance</string>
-    <string name="total">মোট</string>
-    <string name="empty">No record found!</string>
-    <string name="transaction">Transaction</string>
-    <string name="tk">৳</string>
-    <string name="edit_profile">Edit Profile</string>
-    <string name="logout">Logout</string>
+    <string name="conveyance_balance">Conveyance Balance</string>
+    <string name="callback">Callback</string>
+    <string name="offer_list">Offer List</string>
+    <string name="nice3000">NICE3000+</string>
+    <string name="error_code">Error Code</string>
+
+    <!-- Dashboard Menu -->
     <string name="website">Website</string>
-    <string name="account">Account</string>
+    <string name="logout">Logout</string>
     <string name="change_password">Change Password</string>
     <string name="social_links">Social Links</string>
     <string name="fb">Facebook</string>
-    <string name="whatsapp">WhatsApp</string>
-    <string name="whatsapp_it">WhatsApp ( IT )</string>
     <string name="app">App</string>
     <string name="about_app">About App</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="account">Account</string>
+    <string name="linkedin">LinkedIn</string>
+
+    <!-- Change Password -->
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+
+    <!-- About App -->
+    <string name="developer">Developer</string>
+    <string name="version">Version</string>
+    <string name="release_date">Release Date</string>
+    <string name="whats_new">What\'s New</string>
+    <string name="fixed">Fixed</string>
+    <string name="updated">Updated</string>
+    <string name="added">Added</string>
+    <string name="changelog">Changelog</string>
+
+    <!-- Offer -->
+    <string name="project_name">Project Name</string>
     <string name="offer">Offer</string>
-    <string name="offer_list">Offer List</string>
-    <string name="offer_edit">Edit Offer</string>
-    <string name="name">Name</string>
     <string name="address">Address</string>
+    <string name="work_type">Work Type</string>
+    <string name="product_type">Product Type</string>
     <string name="type">Type</string>
     <string name="unit">Unit</string>
     <string name="floor">Floor/Stop</string>
     <string name="shaft">Shaft Size (W x D x H)</string>
     <string name="person">Person/Load</string>
     <string name="note">Note</string>
-    <string name="work_type">Work Type</string>
-    <string name="product_type">Product Type</string>
-    <string name="nice3000">NICE3000+</string>
-    <string name="error_details">Error Details</string>
-    <string name="project">Project</string>
-    <string name="date">Date</string>
-    <string name="with">With</string>
-    <string name="payment">Payment</string>
-    <string name="cash">Cash</string>
-    <string name="cheque">Cheque</string>
-    <string name="amount">Amount</string>
-    <string name="callback">Callback</string>
-    <string name="report">Report</string>
-    <string name="schedule">Schedule</string>
-    <string name="submit">Submit</string>
     <string name="ref">Reference</string>
-    <string name="error_code">Error Code</string>
-    <string name="view">View</string>
-    <string name="description">Description</string>
-    <string name="cause">Cause</string>
-    <string name="fault_level">Fault Level</string>
-    <string name="solution">Solution</string>
+
+    <string name="call">Call</string>
+    <string name="add">Add</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="payment">Payment</string>
+    <string name="expense">Expense</string>
+
     <string name="el1">1A\nThe elevator running is not affected on any condition.</string>
     <string name="el21">2A\nThe parallel/group control function is disabled.</string>
     <string name="el22">2B\nThe door pre-open/re-leveling function is disabled.</string>
-    <string name="el31">3A\nলো-স্পীডে, লিফট তাড়াতাড়ি থামে এবং পুনরায় চালু করতে পারে না।</string>
-    <string name="el32">3B\nলো-স্পীডে, লিফট থামে না। নরমাল স্পীডে, লিফট থামে এবং ৩ সেকেন্ড পরে লো-স্পীডে চলতে পারে।</string>
-    <string name="el41">4A\nলো-স্পীডে, লিফট নির্দিষ্ট গতিতে থামে এবং পুনরায় চালু করতে পারে না।</string>
-    <string name="el42">4B\nলো-স্পীডে, লিফট থামে না। নরমাল স্পীডে, লিফট থামে এবং ৩ সেকেন্ড পরে লো-স্পীডে চলতে পারে।</string>
-    <string name="el43">4C\nলো-স্পীডে, লিফট থামে না। নরমাল স্পীডে, লিফট থামে এবং ৩ সেকেন্ড পরে লো-স্পীডে চলতে পারে।</string>
-    <string name="el51">5A\nলো-স্পীডে, লিফট সাথে সাথে থামে এবং পুনরায় চালু করতে পারে না।</string>
-    <string name="el52">5B\nলো-স্পীডে, লিফট থামে না। নরমাল স্পীডে, লিফট থামে এবং ৩ সেকেন্ড পরে লো-স্পীডে চলতে পারে।</string>
+    <string name="el31">3A\nIn low-speed running, the elevator stops at special deceleration rate, and cannot restart.</string>
+    <string name="el32">3B\nIn low-speed running, the elevator does not stop. In normal-speed running, the elevator stops, and then can start running at low speed after a delay of 3s.</string>
+    <string name="el41">4A\nIn low-speed running, the elevator stops under special deceleration rate, and cannot restart.</string>
+    <string name="el42">4B\nIn low-speed running, the elevator does not stop. In normal-speed running, the elevator stops, and then can start running at low speed after a delay of 3s.</string>
+    <string name="el43">4C\nIn low-speed running, the elevator does not stop. In normal-speed running, the elevator stops, and then can start running at low speed after a delay of 3s.</string>
+    <string name="el51">5A\nIn low-speed running, the elevator stops immediately and cannot restart.</string>
+    <string name="el52">5B\nIn low-speed running, the elevator does not stop. In normal-speed running, the elevator stops, and then can start running at low speed after a delay of 3s.</string>
     <string name="e1">E01</string>
     <string name="e1d">Invert unit protection</string>
     <string name="e1c">●	Main loop output is grounding or short wiring\n●	The connection of traction machine is too long\n●	Work condition is too hot\n●	The connections inside the controller become loose</string>
@@ -294,27 +326,6 @@ the MCB.\n●	Check whether the steel rope slips.</string>
     <string name="e62">E62</string>
     <string name="e62d">Analog input cable broken</string>
     <string name="e62c">●	Subcode 101: The current car load  (F8&#8211;05) is smaller than the car no&#8211;load (F8&#8211;06) and the deviation is larger than the threshold.</string>
-    <string name="e62s">Subcode 101:\n●	Check whether F5&#8211;36 is set correctly.\n●	Check whether the analog input cable of the CTB or MCB is connected  ncorrectly or broken.\n●	Adjust the load cell switch function.</string>
-    <string name="not_found">Not Found</string>
-    <string name="phone">Phone</string>
-    <string name="save">Save</string>
-    <string name="update">Update</string>
-    <string name="confirm_new_password">Confirm New Password</string>
-    <string name="new_password">New Password</string>
-    <string name="old_password">Old Password</string>
-    <string name="personal">Personal</string>
-    <string name="details">Details</string>
-    <string name="report_status">Report Status</string>
-    <string name="empty_report">We are happy to let you know that there is no pending callback.</string>
-    <string name="ins_reset_pass">Please enter your email address and submit to get link to reset your password.</string>
-    <string name="reset_pwd_success">Mail Sent successfully. Please check your mailbox for a mail from noreply@asianlliftbangladesh.com and follow the link to reset your password.</string>
-    <string name="developed_by">Developed By</string>
-    <string name="version">Version</string>
-    <string name="release_date">Release Date</string>
-    <string name="release_date_date">08 July 2020</string>
-    <string name="download">Download</string>
-    <string name="check_for_update">Check for Update</string>
-    <string name="whats_new">WHAT\'S NEW</string>
-    <string name="only_conveyance">Only conveyance found!</string>
-    <string name="delete">Delete</string>
+    <string name="e62s">Subcode 101:\n●	Check whether F5&#8211;36 is set correctly.\n●	Check whether the analog input cable of the CTB or MCB is connected correctly or broken.\n●	Adjust the load cell switch function.</string>
+
 </resources>

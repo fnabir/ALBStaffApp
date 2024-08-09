@@ -2,18 +2,18 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
+    android:id="@+id/nav_dashboard"
     app:startDestination="@+id/nav_home">
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.asianliftbd.staff.DashboardHome"
-        android:label="এশিয়ান লিফট বাংলাদেশ"
-        tools:layout="@layout/dashboard_home"/>
+        android:name="com.asianliftbd.staff.fragment.DashboardHome"
+        android:label="@string/company_name"
+        tools:layout="@layout/fragment_dashboard_home" />
 
     <fragment
         android:id="@+id/nav_menu"
-        android:name="com.asianliftbd.staff.DashboardMenu"
-        android:label="মেনু"
-        tools:layout="@layout/dashboard_menu"/>
+        android:name="com.asianliftbd.staff.fragment.DashboardMenu"
+        android:label="@string/menu"
+        tools:layout="@layout/fragment_dashboard_menu" />
 </navigation>

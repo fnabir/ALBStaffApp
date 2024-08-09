@@ -1,48 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
-        android:name=".db.DatabasePersisteance"
+        android:name=".services.DatabasePersistence"
         android:allowBackup="true"
-        android:fullBackupContent="true"
-        android:icon="@mipmap/alb"
-        android:label="@string/appname"
-        android:roundIcon="@mipmap/alb_round"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".Dashboard"/>
-        <activity android:name=".AppInfo" />
-        <activity android:name=".OfferList" />
-        <activity android:name=".Offer" />
-        <activity android:name=".Report" />
-        <activity android:name=".CallbackProject" />
-        <activity android:name=".Callback" />
-        <activity android:name=".activity.EditProfile" />
-        <activity android:name=".ChangePassword"/>
-        <activity android:name=".Contact"/>
-        <activity android:name=".Error" />
-        <activity android:name=".Conveyance" />
-        <activity android:name=".ConvList" />
-        <activity android:name=".Transaction" />
-        <activity android:name=".Welcome" />
-        <activity android:name=".ForgetPwd" />
-        <activity android:name=".Login" />
-        <activity android:name=".Start"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activity.Start"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.PasswordForget" />
+        <activity android:name=".activity.Login" />
+        <activity android:name=".activity.Dashboard"
+            android:label="@string/company_name" />
 
-        <meta-data
-            android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@drawable/notification" />
-        <meta-data
-            android:name="com.google.firebase.messaging.default_notification_color"
-            android:resource="@color/blueM" />
+        <activity android:name=".activity.Transaction" />
+        <activity android:name=".activity.Conveyance" />
+        <activity android:name=".activity.Callback" />
+        <activity android:name=".activity.CallbackProject" />
+        <activity android:name=".activity.CallbackNew" />
+        <activity android:name=".activity.Offer" />
+        <activity android:name=".activity.OfferNew" />
+        <activity android:name=".activity.Error" />
+
+        <activity android:name=".activity.EditProfile" />
+        <activity android:name=".activity.PasswordChange" />
+        <activity android:name=".activity.AboutApp" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

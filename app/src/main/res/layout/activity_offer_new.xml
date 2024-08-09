@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.OfferNew"
+    android:id="@+id/main">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        style="@style/toolbarLayout">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbarLayout"
+            style="@style/collapsingToolbarLayout"
+            app:toolbarId="@+id/toolbar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/toolbar"
+                app:title="New Offer"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_back"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            style="@style/linearLayout.vertical.center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/projectNameLayout"
+                style="@style/textInputLayout"
+                android:hint="@string/project_name">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/projectName"
+                    style="@style/textInput"
+                    android:inputType="textCapWords"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addressLayout"
+                style="@style/textInputLayout"
+                android:hint="@string/address">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/address"
+                    style="@style/textInput" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/productLayout"
+                style="@style/textDropDownLayout"
+                android:hint="@string/product_type"
+                android:labelFor="@+id/product">
+                <AutoCompleteTextView
+                    android:id="@+id/productDropDown"
+                    style="@style/textInput"
+                    android:inputType="textCapWords"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/workLayout"
+                style="@style/textDropDownLayout"
+                android:layout_marginTop="8dp"
+                android:hint="@string/work_type"
+                android:labelFor="@+id/workDropDown">
+                <AutoCompleteTextView
+                    android:id="@+id/workDropDown"
+                    style="@style/textInput"
+                    android:inputType="textCapWords"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                style="@style/linearLayout.horizontal"
+                android:baselineAligned="false">
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/textInputLayout"
+                    android:layout_width="0dp"
+                    android:hint="@string/unit"
+                    android:layout_weight="0.28"
+                    android:paddingEnd="4dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/unit"
+                        style="@style/textInput"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/textInputLayout"
+                    android:layout_width="0dp"
+                    android:hint="@string/floor"
+                    android:layout_weight="0.56"
+                    android:paddingStart="4dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/floor"
+                        style="@style/textInput"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayout"
+                app:suffixText="mm"
+                android:hint="@string/shaft">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/shaft"
+                    style="@style/textInput"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayout"
+                android:hint="@string/person">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/person"
+                    style="@style/textInput"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayout"
+                android:hint="@string/note">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/note"
+                    style="@style/textInput"
+                    android:inputType="textMultiLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/submitButton"
+                style="@style/button.elevated.submit"/>
+
+            <Button
+                android:id="@+id/deleteButton"
+                style="@style/button.elevated.delete"
+                android:visibility="gone"/>
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progressBar"
+                style="@style/progressBar"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

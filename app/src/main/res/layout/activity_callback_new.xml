@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.CallbackNew"
+    android:id="@+id/main">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        style="@style/toolbarLayout">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbarLayout"
+            style="@style/collapsingToolbarLayout"
+            app:toolbarId="@+id/toolbar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/toolbar"
+                app:title="New Callback"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_back"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            style="@style/linearLayout.vertical.center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameLayout"
+                style="@style/textInputLayout"
+                android:hint="@string/email">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
+                    style="@style/textInput"
+                    android:inputType="none"
+                    android:enabled="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/projectLayout"
+                style="@style/textDropDownLayout"
+                android:hint="@string/project"
+                android:labelFor="@+id/projectDropDown">
+                <AutoCompleteTextView
+                    android:id="@+id/projectDropDown"
+                    style="@style/textInput"
+                    android:inputType="none"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/detailsLayout"
+                style="@style/textInputLayout"
+                android:hint="@string/details">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/details"
+                    style="@style/textInput"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/dateButton"
+                style="@style/button.date"/>
+
+            <Button
+                android:id="@+id/submitButton"
+                style="@style/button.elevated.submit"/>
+
+            <Button
+                android:id="@+id/deleteButton"
+                style="@style/button.elevated.delete"/>
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progressBar"
+                style="@style/progressBar"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

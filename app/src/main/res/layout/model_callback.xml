@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/llayout"
-    android:layout_marginTop="3dp"
-    android:layout_marginBottom="3dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    android:background="@drawable/btn_w">
+    android:id="@+id/mainLayout"
+    style="@style/linearLayout">
+
     <RelativeLayout
-        android:id="@+id/m"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp">
+        android:id="@+id/layout"
+        style="@style/linearLayout"
+        android:padding="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/gradient_linear_indigo">
+
         <LinearLayout
-            android:id="@+id/lsite"
-            style="@style/llayout_v"
+            android:id="@+id/l"
+            style="@style/linearLayout.vertical"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:paddingStart="8dp"
@@ -21,20 +23,24 @@
             android:layout_toStartOf="@+id/date">
             <TextView
                 android:id="@+id/name"
-                style="@style/text_b"/>
+                style="@style/text.bold"/>
             <TextView
                 android:id="@+id/details"
-                style="@style/text_s"/>
+                style="@style/text.small"
+                android:textSize="15sp"/>
         </LinearLayout>
+
         <TextView
             android:id="@+id/date"
-            style="@style/text_s"
+            style="@style/text.small"
+            android:textSize="15sp"
             android:layout_width="110dp"
             android:textStyle="bold"
-            android:layout_alignTop="@+id/lsite"
-            android:layout_alignBottom="@+id/lsite"
+            android:layout_alignTop="@+id/l"
+            android:layout_alignBottom="@+id/l"
             android:gravity="end|center_vertical"
             android:layout_marginEnd="3dp"
             android:layout_alignParentEnd="true"/>
+
     </RelativeLayout>
 </RelativeLayout>

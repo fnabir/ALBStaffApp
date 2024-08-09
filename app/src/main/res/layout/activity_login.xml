@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Login"
+    android:id="@+id/main">
+    <LinearLayout
+        style="@style/linearLayout.vertical.center"
+        android:padding="20dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="142dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo_alb_outline"
+            tools:ignore="ContentDescription"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            style="@style/text.extraLarge"
+            android:text="@string/company_name"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/roboto"/>
+
+        <TextView
+            style="@style/text.bold"
+            android:textSize="32sp"
+            android:text="@string/welcome"
+            android:layout_marginBottom="25dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mailTextLayout"
+            style="@style/textInputLayout"
+            android:hint="@string/email">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mailText"
+                style="@style/textInput"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordTextLayout"
+            style="@style/textInputLayout"
+            android:hint="@string/password"
+            app:passwordToggleEnabled="true"
+            app:hintAnimationEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordText"
+                style="@style/textInput"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/forgotButton"
+            android:textAppearance="@style/text.small"
+            style="@style/button.text"
+            android:text="@string/forget_password"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/loginButton"
+            style="@style/button.elevated.submit"
+            android:text="@string/login"/>
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressBar"
+            style="@style/progressBar"/>
+
+        <LinearLayout
+            style="@style/linearLayout.horizontal.center">
+            <TextView
+                style="@style/text.extraSmall"
+                android:text="@string/agree_terms"/>
+            <Button
+                android:id="@+id/termsOfUseButton"
+                style="@style/button.text"
+                android:text="@string/terms_of_use"
+                android:textSize="14sp"
+                android:padding="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

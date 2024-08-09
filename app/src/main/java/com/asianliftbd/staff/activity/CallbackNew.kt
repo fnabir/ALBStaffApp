@@ -42,6 +42,8 @@ class CallbackNew : AppCompatActivity() {
     private var details: String? = null
     private var date: String? = null
 
+    private val user = FirebaseAuth.getInstance().currentUser
+
     private val ref = FirebaseDatabase.getInstance().reference
     private var refCallback: DatabaseReference? = null
 
@@ -86,6 +88,8 @@ class CallbackNew : AppCompatActivity() {
         } else {
             deleteButton.visibility = View.GONE
         }
+
+        binding.name.setText(user!!.displayName)
 
         nameText.doOnTextChanged { text, _, _, _ ->
             if (text.toString().isEmpty()) {
@@ -204,7 +208,7 @@ class CallbackNew : AppCompatActivity() {
                     name = name!!,
                     details = details!!,
                     date = dateButton.text.toString(),
-                    uid = FirebaseAuth.getInstance().currentUser!!.uid
+                    uid = user.uid
                 )
 
                 refCallback?.setValue(data) { error, _ ->

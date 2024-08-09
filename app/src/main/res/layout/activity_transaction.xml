@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Transaction">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarLayout"
+        style="@style/toolbarLayout">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/toolbar"
+            app:subtitleCentered="true"
+            app:navigationIcon="@drawable/ic_back"
+            app:menu="@menu/menu_add" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/transactionLayout"
+        style="@style/linearLayout"
+        android:layout_below="@+id/toolbarLayout"
+        android:layout_alignParentBottom="true">
+
+        <ScrollView
+            style="@style/scrollView"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/totalLayout">
+            <RelativeLayout
+                style="@style/linearLayout">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    style="@style/layout"/>
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/totalLayout"
+            style="@style/layoutTotalContainer">
+            <RelativeLayout
+                android:id="@+id/totalConveyanceLayout"
+                style="@style/layoutTotal">
+                <TextView
+                    style="@style/layoutTotalText"
+                    android:text="@string/conveyance"
+                    android:layout_toStartOf="@id/totalConveyanceValue" />
+                <TextView
+                    android:id="@+id/totalConveyanceValue"
+                    style="@style/layoutTotalAmount"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/totalBalanceLayout"
+                style="@style/layoutTotal">
+                <TextView
+                    style="@style/layoutTotalText"
+                    android:text="@string/total"
+                    android:layout_toStartOf="@id/totalBalanceValue" />
+                <TextView
+                    android:id="@+id/totalBalanceValue"
+                    style="@style/layoutTotalAmount"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emptyTextView"
+        style="@style/emptyTextView"
+        app:drawableTopCompat="@drawable/img_happy"
+        android:layout_below="@+id/toolbarLayout"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

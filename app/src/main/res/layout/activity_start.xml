@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayout.vertical.center"
+    android:layout_gravity="center"
+    tools:context=".activity.Start"
+    android:id="@+id/main">
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/text.extraLarge"
+        android:text="@string/company_name"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_app"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginButton"
+        style="@style/button.elevated"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="@string/login_with_email"
+        android:hapticFeedbackEnabled="true"/>
+
+    <Button
+        android:id="@+id/termsOfUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/text.extraSmall"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:text="@string/terms_of_use"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        style="@style/linearLayout.horizontal.center">
+        <TextView
+            style="@style/text.extraSmall"
+            android:text="@string/copyright"/>
+        <Button
+            android:id="@+id/websiteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textAppearance="@style/text.extraSmall"
+            android:text="@string/company_name"
+            android:textSize="14sp"
+            android:padding="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>

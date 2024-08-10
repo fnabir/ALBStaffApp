@@ -8,10 +8,7 @@ import android.util.Log
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.setPadding
 import com.asianliftbd.staff.BuildConfig
 import com.asianliftbd.staff.R
@@ -43,8 +40,9 @@ class AboutApp : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
 
         val changeLog : Array<ArrayList<Any>> = arrayOf (
-            arrayListOf("3.0.0", 10, "12 Aug 2024",
+            arrayListOf("3.0.0", 10, "11 Aug 2024",
                 "- Crash on opening Staff Balance page.\n" +
+                        "- Crash on saving new offer when work typ is not set.\n" +
                         "- Saving a transaction for staff would change the order of the staff balance page.",
                 "- Forget Password page gets the mail from Login page if the typed mail is valid.\n" +
                         "- Restrict date selection from the future.\n" +

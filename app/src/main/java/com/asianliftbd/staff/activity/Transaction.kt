@@ -54,7 +54,6 @@ class Transaction : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
-        supportActionBar?.title = FirebaseAuth.getInstance().currentUser!!.displayName
 
         transactionLayout = binding.transactionLayout
         recyclerView = binding.recyclerView

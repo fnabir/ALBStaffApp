@@ -6,5 +6,4 @@ data class CallbackModel (
     var name: String = "",
     var uid: String? = null,
     var details: String = "",
-    var date: String = "") {
-}
+    var date: String = "")

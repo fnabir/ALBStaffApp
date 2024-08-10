@@ -7,5 +7,4 @@ data class TransactionModel (
     var title: String = "",
     var details: String? = null,
     var amount: Int = 0,
-    var date: String = "") {
-}
+    var date: String = "")

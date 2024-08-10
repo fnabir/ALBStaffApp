@@ -15,6 +15,4 @@ data class OfferModel (
     var note: String? = null,
     var refer: String? = null,
     var date: String? = null,
-    var uid: String = "") {
-
-}
+    var uid: String = "")

@@ -59,7 +59,7 @@ class Conveyance : AppCompatActivity() {
             layoutManager = linearLayoutManager
         }
 
-        refTotalBalance?.child("date")?.addValueEventListener(object : ValueEventListener {
+        refTotalBalance.child("date")?.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(d: DataSnapshot) {
                 if (d.exists()) supportActionBar?.subtitle = String.format("Updated on %s", d.getValue<String>())
             }
@@ -76,7 +76,7 @@ class Conveyance : AppCompatActivity() {
                 if (!d.exists()) {
                     transactionLayout.visibility = View.GONE
                     emptyTextView.visibility = View.VISIBLE
-                    refTotalBalance.child("value")?.setValue(0)
+                    refTotalBalance.child("value").setValue(0)
                 } else {
                     emptyTextView.visibility = View.GONE
                     transactionLayout.visibility = View.VISIBLE

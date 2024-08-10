@@ -3,5 +3,4 @@ import com.google.firebase.database.IgnoreExtraProperties
 
 @IgnoreExtraProperties
 data class CallbackTotalModel (
-    val name: String = "") {
-}
+    val name: String = "")

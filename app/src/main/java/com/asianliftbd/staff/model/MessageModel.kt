@@ -6,5 +6,4 @@ data class MessageModel (
     val title: String? = null,
     val text: String? = null,
     val background: String? = null,
-    val show: Boolean = false) {
-}
+    val show: Boolean = false)

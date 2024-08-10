@@ -118,7 +118,7 @@ class Login : AppCompatActivity() {
                                     if (BuildConfig.BUILD_TYPE == "release") {
                                         refInfo.child("device").setValue("$model ($android)")
                                     }
-                                    val i = Intent(this@Login, Login::class.java)
+                                    val i = Intent(this@Login, Dashboard::class.java)
                                     Snackbar.make(it, "Login Successful", Snackbar.LENGTH_SHORT)
                                         .show()
                                     i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
@@ -157,7 +157,7 @@ class Login : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         if (user != null) {
-            startActivity(Intent(this, Login::class.java))
+            startActivity(Intent(this, Dashboard::class.java))
             finish()
         }
     }

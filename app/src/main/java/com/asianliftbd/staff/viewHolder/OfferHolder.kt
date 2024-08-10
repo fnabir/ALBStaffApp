@@ -15,7 +15,7 @@ class OfferHolder(private val v: View) : RecyclerView.ViewHolder(v) {
     fun setDetails(
         ctx: Context,
         name: String, uid: String, address: String?,
-        projectType: String?, workType: String,
+        projectType: String?, workType: String?,
         unit: String?, floor: String?, shaft: String?, person: String?,
         note: String?, refer: String?, date: String?, key: String
     ) {
@@ -36,9 +36,10 @@ class OfferHolder(private val v: View) : RecyclerView.ViewHolder(v) {
         if (address?.isEmpty() == true || address == null) textViewAddress.visibility = View.GONE
         else textViewAddress.text = address
 
-        if (workType.isEmpty() && (unit?.isEmpty() == true || unit == null)) textViewType.text = projectType
-        else if (workType.isEmpty() && unit?.isNotEmpty() == true || unit == null) textViewType.text = String.format("%s > %s Unit(s)", projectType, unit)
-        else if (workType.isNotEmpty() && unit.isEmpty()) textViewType.text = String.format("%s > %s", projectType, workType)
+        if (projectType.isNullOrEmpty()) textViewType.visibility = View.GONE
+        else if (workType.isNullOrEmpty() && (unit?.isEmpty() == true || unit == null)) textViewType.text = projectType
+        else if (workType.isNullOrEmpty() && unit?.isNotEmpty() == true || unit == null) textViewType.text = String.format("%s > %s Unit(s)", projectType, unit)
+        else if (workType.isNullOrEmpty() && unit.isEmpty()) textViewType.text = String.format("%s > %s", projectType, workType)
         else textViewType.text = String.format("%s > %s > %s Unit(s)", projectType, workType, unit)
 
         if (person?.isEmpty() == true && floor?.isEmpty() == true || floor == null) textViewFloor.visibility = View.GONE

@@ -7,7 +7,7 @@ data class OfferModel (
     val name: String = "",
     var address: String? = null,
     var ptype: String? = null,
-    var wtype: String = "",
+    var wtype: String? = null,
     var unit: String? = null,
     var floor: String? = null,
     var shaft: String? = null,

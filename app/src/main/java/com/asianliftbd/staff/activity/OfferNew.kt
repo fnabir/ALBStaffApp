@@ -130,7 +130,7 @@ class OfferNew : AppCompatActivity() {
                     name = project!!,
                     address = address,
                     ptype = liftType,
-                    wtype = workType!!,
+                    wtype = workType,
                     unit = unit,
                     floor = floor,
                     shaft = shaft,
